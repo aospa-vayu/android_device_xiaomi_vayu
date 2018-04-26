@@ -21,6 +21,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Additional native libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 
