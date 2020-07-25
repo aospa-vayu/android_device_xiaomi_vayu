@@ -33,6 +33,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
+# NFC
+TARGET_NFC_SKU := vayu
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     init \
