@@ -122,5 +122,9 @@ BOARD_VNDK_VERSION := current
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2022-07-01
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vayu
+TARGET_RECOVERY_DEVICE_MODULES := libinit_vayu
+
 # Inherit from proprietary files
 include vendor/xiaomi/vayu/BoardConfigVendor.mk
