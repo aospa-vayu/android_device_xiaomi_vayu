@@ -98,6 +98,9 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 # Display
 TARGET_SCREEN_DENSITY := 410
 
+# FM
+BOARD_HAVE_QCOM_FM := true
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \

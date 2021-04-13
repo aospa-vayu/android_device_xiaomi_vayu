@@ -183,6 +183,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    qcom.fmradio
+
 # Fstab
 PRODUCT_PACKAGES += \
     fstab.qcom
