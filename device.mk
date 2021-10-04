@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# IRSC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/security/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
