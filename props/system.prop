@@ -1,0 +1,3 @@
+# ParanoidDoze
+ro.sensor.pickup=xiaomi.sensor.pickup
+ro.sensor.proximity=true
