@@ -31,6 +31,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.qti.dcvs.sh",
+    src: "init.qti.dcvs.sh",
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "init.fingerprint.rc",
     src: "init.fingerprint.rc",
@@ -44,3 +50,4 @@ prebuilt_etc {
     sub_dir: "init/hw",
     vendor: true,
 }
+

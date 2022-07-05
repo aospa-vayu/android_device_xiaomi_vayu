@@ -228,6 +228,7 @@ PRODUCT_PACKAGES += \
 # Init Scripts
 PRODUCT_PACKAGES += \
     init.target.rc \
+    init.qti.dcvs.sh \
     init.fingerprint.rc
 
 # HIDL
