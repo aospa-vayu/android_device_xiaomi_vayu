@@ -30,6 +30,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 	bt \
 	overlay \
     display \
+    media-legacy \
 	audio
 
 # Fstab
