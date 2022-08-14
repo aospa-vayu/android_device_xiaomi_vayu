@@ -60,5 +60,9 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service
+	
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/vayu/vayu-vendor.mk)
