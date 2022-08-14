@@ -252,6 +252,11 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media-legacy \
 	audio
 
+# QDCM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qdcm/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml \
+    $(LOCAL_PATH)/configs/qdcm/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
+ 
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
