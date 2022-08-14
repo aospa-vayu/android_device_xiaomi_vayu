@@ -24,6 +24,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    init
+
 # Fstab
 PRODUCT_PACKAGES += \
     fstab.qcom
