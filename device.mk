@@ -29,6 +29,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     init \
 	bt \
 	overlay \
+    telephony \
     display \
     perf \
     media-legacy \
