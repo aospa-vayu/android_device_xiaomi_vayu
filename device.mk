@@ -27,7 +27,8 @@ TARGET_BOARD_PLATFORM := msmnile
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     init \
-	bt
+	bt \
+	overlay
 
 # Fstab
 PRODUCT_PACKAGES += \
@@ -58,6 +59,6 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-	
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/vayu/vayu-vendor.mk)
