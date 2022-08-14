@@ -29,6 +29,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     init \
 	bt \
 	overlay \
+    display \
 	audio
 
 # Fstab
