@@ -30,6 +30,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 	bt \
 	overlay \
     display \
+    perf \
     media-legacy \
 	audio
 
