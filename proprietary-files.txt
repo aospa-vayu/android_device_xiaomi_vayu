@@ -678,3 +678,11 @@ vendor/etc/thermald-devices.conf
 vendor/etc/init/init.mi_thermald.rc
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
+
+# Fingerprint
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
