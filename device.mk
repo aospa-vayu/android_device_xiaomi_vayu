@@ -32,6 +32,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     display \
     perf \
+    adreno \
     media-legacy \
 	audio
 

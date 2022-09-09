@@ -529,3 +529,15 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
+
+# Graphics (Adreno firmware)
+vendor/firmware/a612_rgmu.bin
+vendor/firmware/a618_gmu.bin
+vendor/firmware/a630_gmu.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/a640_gmu.bin
+vendor/firmware/a640_zap.b00
+vendor/firmware/a640_zap.b01
+vendor/firmware/a640_zap.b02
+vendor/firmware/a640_zap.elf
+vendor/firmware/a640_zap.mdt
