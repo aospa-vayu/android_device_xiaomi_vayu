@@ -28,6 +28,11 @@ PRODUCT_COPY_FILES += \
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     init \
