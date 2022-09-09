@@ -107,5 +107,8 @@ TARGET_SCREEN_DENSITY := 410
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Inherit from proprietary files
 include vendor/xiaomi/vayu/BoardConfigVendor.mk
