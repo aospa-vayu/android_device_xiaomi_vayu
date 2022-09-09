@@ -116,5 +116,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# Vendor Security patch level
+VENDOR_SECURITY_PATCH := 2022-07-01
+
 # Inherit from proprietary files
 include vendor/xiaomi/vayu/BoardConfigVendor.mk
