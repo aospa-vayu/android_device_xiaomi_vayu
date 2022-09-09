@@ -113,5 +113,8 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
 # Inherit from proprietary files
 include vendor/xiaomi/vayu/BoardConfigVendor.mk
