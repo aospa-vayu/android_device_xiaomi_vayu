@@ -33,6 +33,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     perf \
     wlan \
+    vibrator \
     adreno \
     media-legacy \
 	audio
