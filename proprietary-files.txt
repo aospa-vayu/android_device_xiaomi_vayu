@@ -1,3 +1,5 @@
+# All the proprietary files are extracted from miui_VAYUGlobal_V13.0.4.0.SJUMIXM_f96a3e38af_12.0.zip, unless pinned.
+
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
