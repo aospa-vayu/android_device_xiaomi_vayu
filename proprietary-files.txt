@@ -63,6 +63,10 @@ vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
+# Battery Secret
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # Camera
 vendor/lib64/camera/com.qti.sensor.hi259_vayu.so
 vendor/lib64/camera/com.qti.sensor.imx582_vayu.so
