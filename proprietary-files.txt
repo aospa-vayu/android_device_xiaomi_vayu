@@ -685,6 +685,11 @@ vendor/lib64/libperipheral_client.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# NFC
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/lib/libpn553_fw.so
+
 # Thermal
 vendor/bin/mi_thermald
 vendor/bin/thermal-engine

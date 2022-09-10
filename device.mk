@@ -44,6 +44,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wlan \
     vibrator \
     adreno \
+    nq-nfc \
     usb \
     media-legacy \
 	audio
