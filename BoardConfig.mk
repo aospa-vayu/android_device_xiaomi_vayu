@@ -92,6 +92,12 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_USES_METADATA_PARTITION := true
 
+# Camera
+TARGET_USES_QTI_CAMERA_DEVICE := true
+
+# Display
+TARGET_SCREEN_DENSITY := 410
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
@@ -100,6 +106,10 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += vayu
 ODM_MANIFEST_VAYU_FILES := $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
+
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vayu
+TARGET_RECOVERY_DEVICE_MODULES := libinit_vayu
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
@@ -125,7 +135,7 @@ TARGET_SCREEN_DENSITY := 410
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
-# Props
+# Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 
 # Sepolicy
@@ -136,10 +146,6 @@ BOARD_VNDK_VERSION := current
 
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2022-07-01
-
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vayu
-TARGET_RECOVERY_DEVICE_MODULES := libinit_vayu
 
 # Inherit from proprietary files
 include vendor/xiaomi/vayu/BoardConfigVendor.mk

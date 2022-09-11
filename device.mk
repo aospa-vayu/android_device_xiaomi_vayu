@@ -239,9 +239,9 @@ TARGET_BOARD_PLATFORM := msmnile
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     init \
-	bt \
+    bt \
     av \
-	overlay \
+    overlay \
     telephony \
     display \
     perf \
@@ -251,7 +251,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     nq-nfc \
     usb \
     media-legacy \
-	audio
+    audio
 
 # QDCM
 PRODUCT_COPY_FILES += \
