@@ -33,11 +33,6 @@ import /vendor/etc/init/init.batterysecret.rc
 import /vendor/etc/init/init.charge_logger.rc
 import /vendor/etc/init/init.mishow.ctl.rc
 
-on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_wglink audio_q6_pdr audio_q6_notifier audio_apr audio_adsp_loader audio_q6 audio_native audio_usf audio_pinctrl_wcd audio_swr audio_platform audio_hdmi audio_wcd_spi audio_stub audio_wcd_core audio_wsa881x audio_wcd9360 audio_hdmi audio_cs35l41 audio_tas2557 audio_tas256x audio_tfa98xx audio_machine_msmnile
-    write /proc/sys/kernel/sched_boost 1
-    symlink /data/tombstones /tombstones
-
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
@@ -49,24 +44,9 @@ on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
     wait /dev/block/platform/soc/1d84000.ufshc
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
-    #change owner of white led
-    chown system system /sys/class/leds/white/brightness
-    chown system system /sys/class/leds/white/breath
-    #change owner of green led
-    chown system system /sys/class/leds/green/brightness
-    chown system system /sys/class/leds/green/breath
     # add for cit-test of led
     chmod 0666 /sys/class/leds/led:torch_0/brightness
     chmod 0666 /sys/class/leds/led:switch_0/brightness
-
-# Add a cpuset for the camera daemon
-# We want all cores for camera
-    mkdir /dev/cpuset/camera-daemon
-    write /dev/cpuset/camera-daemon/cpus 0-7
-    write /dev/cpuset/camera-daemon/mems 0
-    chown cameraserver cameraserver /dev/cpuset/camera-daemon
-    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
-    chmod 0660 /dev/cpuset/camera-daemon/tasks
 
 on early-fs
     start vold
@@ -287,48 +267,6 @@ service displayfeature /system/bin/displayfeature
     class late_start
     user root
     group root
-
-service displaycount /vendor/bin/displaycount
-    class late_start
-    user system
-    group system
-    oneshot
-    disabled
-
-on property:sys.boot_completed=1
-    start displaycount
-
-on property:init.svc.surfaceflinger=stopped
-    stop displayfeature
-
-on property:init.svc.surfaceflinger=running
-    start displayfeature
-
-on property:init.svc.surfaceflinger=restarting
-    stop displayfeature
-
-service panel-info-sh /system/vendor/bin/sh /vendor/etc/init.panel_info.sh
-    class core
-    user root
-    oneshot
-
-service leds-sh /system/vendor/bin/sh /vendor/etc/init.leds.sh
-    class core
-    user root
-    oneshot
-
-service nv_mac /vendor/bin/nv_mac
-    class late_start
-    user system
-    group system inet net_admin wifi net_raw
-    oneshot
-
-service dcvs-sh /vendor/bin/init.qti.dcvs.sh
-    class late_start
-    user root
-    group root system
-    disabled
-    oneshot
 
 on property:vendor.dcvs.prop=1
    start dcvs-sh
