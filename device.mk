@@ -240,6 +240,7 @@ TARGET_BOARD_PLATFORM := msmnile
 TARGET_COMMON_QTI_COMPONENTS := \
     init \
 	bt \
+    av \
 	overlay \
     telephony \
     display \
