@@ -27,11 +27,7 @@
 #
 #
 
-import /vendor/etc/init/init.mi_thermald.rc
-import /vendor/etc/init/init.batteryd.rc
-import /vendor/etc/init/init.batterysecret.rc
-import /vendor/etc/init/init.charge_logger.rc
-import /vendor/etc/init/init.mishow.ctl.rc
+import /vendor/etc/init/hw/init.fingerprint.rc
 
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1

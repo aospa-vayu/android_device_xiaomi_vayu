@@ -169,7 +169,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.vayu \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi \
     libkeymaster_messages.vendor
 
 PRODUCT_COPY_FILES += \
@@ -192,7 +192,8 @@ PRODUCT_PACKAGES += \
     
 # Init Scripts
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.target.rc \
+    init.fingerprint.rc
 
 # HIDL
 PRODUCT_PACKAGES += \
