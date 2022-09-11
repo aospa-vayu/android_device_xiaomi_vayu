@@ -28,6 +28,7 @@ TARGET_OTA_ASSERT_DEVICE := vayu,bhima
 
 # Broken Rules
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msmnile
