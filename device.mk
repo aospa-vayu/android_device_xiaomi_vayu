@@ -171,7 +171,11 @@ PRODUCT_PACKAGES += \
     fstab.qcom
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
+# Init Scripts
+PRODUCT_PACKAGES += \
+    init.target.rc
 
 # HIDL
 PRODUCT_PACKAGES += \
