@@ -164,8 +164,9 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey
-    
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.3.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
