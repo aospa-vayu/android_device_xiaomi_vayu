@@ -233,9 +233,14 @@ PRODUCT_PACKAGES += \
 # NFC
 TARGET_NFC_SKU := vayu
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+# Overlays
+PRODUCT_PACKAGES += \
+    SystemUIOverlaysVayu \
+    SettingsOverlaysVayu \
+    FrameworkOverlaysVayu \
+    SettingsProviderOverlaysVayu
+
+PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # ParanoidDoze
 PRODUCT_PACKAGES += \
