@@ -242,6 +242,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
+# Properties
+include $(LOCAL_PATH)/props/props.mk
+
 # ParanoidDoze
 PRODUCT_PACKAGES += \
     ParanoidDoze
