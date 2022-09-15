@@ -147,6 +147,9 @@ on boot
     chown system system /proc/tp_selftest
     chmod 0664 /proc/tp_selftest
     chown system system /sys/class/touch/touch_dev/palm_sensor
+    
+    # USB controller configuration
+    setprop sys.usb.configfs 1
 
 # Add a cpuset for the camera daemon
 # We want all cores for camera
@@ -223,6 +226,9 @@ on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
 on charger
+    setprop vendor.usb.controller a600000.dwc3
+    setprop sys.usb.configfs 1
+
     mkdir /mnt/vendor/persist
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
