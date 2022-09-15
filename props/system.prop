@@ -19,6 +19,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam
 camera.disable_zsl_mode=true
 persist.vendor.camera.facepp.fdenable=0
 
+# Charger
+ro.charger.enable_suspend=true
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q855-16947-1
 
