@@ -346,7 +346,13 @@ on property:ro.boot.hwname=*
 
 on property:ro.boot.product.hardware.sku=vayu
     enable nqnfc_2_0_hal_service
-    
+
+service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
+    class main
+    user root
+    group system wakelock
+    writepid /dev/cpuset/system-background/tasks
+
 service remosaic_daemon /system/vendor/bin/remosaic_daemon
    class late_start
    user camera
