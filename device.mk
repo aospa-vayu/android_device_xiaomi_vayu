@@ -35,8 +35,8 @@ TARGET_NFC_SKU := vayu
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     init \
-	bt \
-	overlay \
+    bt \
+    overlay \
     telephony \
     display \
     perf \
@@ -46,7 +46,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     nq-nfc \
     usb \
     media-legacy \
-	audio
+    audio
 
 # Fstab
 PRODUCT_PACKAGES += \
